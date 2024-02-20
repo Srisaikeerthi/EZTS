@@ -83,7 +83,7 @@ ans(a,b)
 
     
 
-#PROGRAM 4 - (flow008) luckfour
+#PROGRAM 4 - luckfour
 
 #APPROACH - 1
 t=int(input())
@@ -94,7 +94,7 @@ for i in range(t):
         if n%10==4:
             count+=1
         n=n//10
-print(count)
+    print(count)
 
 
 #APPROACH - 2
