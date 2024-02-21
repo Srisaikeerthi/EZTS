@@ -1,13 +1,13 @@
 #PROGRAM- 1-find duplicate element hacker
-'''
+#APPROACH -1
 n=int(input())
 x=list(map(int,input().split()))[:n]
 for i in range(n):
     if x[i] in x[i+1:]:
         print(x[i])
         break
-        '''
-'''
+        
+#APPROACH -2
 n=int(input())
 x=list(map(int,input().split()))[:n]
 x.sort()
@@ -15,9 +15,8 @@ for i in range(n-1):
     if x[i] == x[i+1]:
         print(x[i])
         break
-'''
-
-'''
+        
+#APPROACH -3
 n=int(input())
 x=list(map(int,input().split()))[:n]
 for i in x:
@@ -25,32 +24,31 @@ for i in x:
     if c>1:
         print(i)
         break
-'''
+
+
 
 #PROGRAM- 2 print unique elements of array
-'''
+#APPROACH -1
 n=int(input())
 x=list(map(int,input().split()))[:n]
 for i in x:
     c=x.count(i)
     if c==1:
         print(i,end=" ")
-    '''
-
-'''n=int(input())
+    
+#APPROACH -2
+n=int(input())
 x=list(map(int,input().split()))[:n]
 unique=[]
 for i in x:
     if x.count(i)==1:
         unique.append(i)
 print(int(unique))
-'''
         
 
 #PROGRAM- 3
-
-        
-'''t=int(input())
+#APPROACH -1
+t=int(input())
 t1=[]
 t2=[]
 factors=[]
@@ -70,6 +68,7 @@ for i in range(t):
         print(0)
 
 
+#APPROACH -2
 t=int(input())
 for i in range(t):
     n=int(input())
@@ -87,6 +86,7 @@ for i in range(t):
         print(0)
 
 
+#APPROACH -3
 t=int(input())
 def ans(n):
     
@@ -102,12 +102,9 @@ test(t)
 
 
 
-
-        '''
-
-
 #PROGRAM- 4-cost of grociees codechef
-'''t=int(input())
+#APPROACH -1
+t=int(input())
 for i in range(t):
     n,x=map(int,input().split())
     a=list(map(int,input().split()))
@@ -119,10 +116,11 @@ for i in range(t):
         else:
             continue
     print(c)
-'''
 
-#check whether it its prime
-'''n=int(input())
+
+
+#PROGRAM- 5 - check whether it its prime
+n=int(input())
 lst=[]
 for i in range(1,n+1):
     if n%i==0:
@@ -132,10 +130,10 @@ if count==2:
     print('yes')
 else:
     print('no')
-'''
 
-#running comapare codechef
-'''t=int(input())
+
+#PROGRAM- 6 - running comapare codechef
+t=int(input())
 for i in range(t):
     n=int(input())
     a=list(map(int,input().split()))
@@ -147,11 +145,10 @@ for i in range(t):
     print(count)
 
 
-'''
 
-#PROGRAM- 5 - perfect number
-#all even perfect numbers in a given range
-'''n,x=map(int,input().split())
+#PROGRAM- 8 - all even perfect numbers in a given range
+#APPROACH-1
+n,x=map(int,input().split())
 lst=[]
 flst=[]
 for i in range(n,x+1):
@@ -165,7 +162,8 @@ for i in range(1,len(lst)):
     if sum == lst[i]:
         print(lst[i])
     sum=0
-    '''
+
+#APPROACH-2
 x=int(input())
 for i in range(2,x+1,2):
     for j in range(1,i):
